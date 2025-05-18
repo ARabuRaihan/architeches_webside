@@ -87,8 +87,45 @@ color: #727272;
   width: 100%;
 }
 
+/* main related style */
+.teams{
+  max-width: 1000px;
+  margin: 85px auto;
+  justify-content: space-between;
+}
 
+/* Architect discuss section related */
 
+.discuss-img{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+}
+.discuss-img img{
+  width: 100%;
+}
+.discuss-container{
+  max-width: 480px;
+  margin: auto ;
+  margin-left: 80px;
+}
+.discuss-title{
+  font-weight: 500;
+  font-size: 2.8rem;
+  margin: auto;
+}
+.discuss-subtitle{
+  color: #FF900E;
+}
+.discuss-description{
+  font-weight: 400;
+  font-size: 1rem;
+}
+.discuss-btn{
+  padding: 20px 25px;
+  border: none;
+  border-radius: 8px;
+}
 
 /* responsive the website use media quaye */
 
@@ -102,5 +139,26 @@ color: #727272;
     flex-direction: column;
     gap: 20px;
     align-items: center;
+  }
+  .teams{
+    flex-direction: column;
+  }
+  .discuss-img{
+    grid-template-columns: repeat(1,1fr);
+  }
+.discuss-container{
+  margin: auto;
+}
+}
+
+
+/* medium device */
+
+@media screen and (min-width:567px) and (max-width:992px){
+  .teams{
+    flex-direction: column;
+  }
+  .discuss-container{
+    margin: 50px auto;
   }
 }
