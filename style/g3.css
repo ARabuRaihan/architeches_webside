@@ -135,6 +135,53 @@ section{
   border-radius: 8px;
 }
 
+
+/* our features related style */
+.features-main-container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 130px;
+}
+.features-title{
+border-left: 5px solid #FF900E;
+padding-left: 20px;
+}
+.features-card-title{
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.features-card{
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  align-items: center;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+}
+.features-img-container{
+  margin: auto;
+}
+.features-img-container img{
+  width: 100%;
+}
+
+.batch-container{
+  border: none;
+  border-radius: 8px;
+  padding: 24px 20px;
+  margin: -100px;
+}
+.batch-year{
+  font-weight: 700;
+  font-size: 3rem;
+  margin:0;
+}
+.experience{
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
 /* facts related style */
 
 .cards-container{
@@ -218,6 +265,13 @@ section{
 .sponsors-companies img{
   margin-bottom: 15px;
 }
+.features-main-container{
+  grid-template-columns: repeat(1,1fr);
+}
+.batch-container{
+  margin: 0;
+  margin-top: 20px;
+}
 }
 
 
@@ -236,4 +290,11 @@ section{
   .sponsors-companies{
     grid-template-columns: repeat(3,1fr);
   }
+  .features-main-container{
+  grid-template-columns: repeat(1,1fr);
+}
+.batch-container{
+  margin: 0;
+  margin-top: 20px;
+}
 }
